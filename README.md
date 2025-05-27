@@ -53,15 +53,16 @@ Você pode visualizar localmente:
 
 📷 Preview
 
-🔧 Possíveis Melhorias Futuras
-Adicionar JavaScript para interatividade (ex: botão de contato, rolagem suave)
+## 🔧 Possíveis Melhorias Futuras
 
-Inclusão de formulário de matrícula
+- **Adicionar JavaScript para interatividade (ex: botão de contato, rolagem suave)**
 
-Melhorias em acessibilidade (alt nas imagens, navegação por teclado)
+- **Inclusão de formulário de matrícula**
 
-Otimização para SEO (meta description, titles dinâmicos)
+- **Melhorias em acessibilidade (alt nas imagens, navegação por teclado)**
 
-📩 Contato
-Desenvolvido por Alonso Sales — estudante de Sistemas de Informação e entusiasta de desenvolvimento web.
+- **Otimização para SEO (meta description, titles dinâmicos)**
+
+## 📩 Contato
+- **Desenvolvido por Alonso Sales — estudante de Sistemas de Informação e entusiasta de desenvolvimento web.**
 email: alosnosales@gmail.com
