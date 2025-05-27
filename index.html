@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="assets/logo.png" type="image/png">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/global.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/presentation.css">
+  <link rel="stylesheet" href="styles/features.css">
+  <link rel="stylesheet" href="styles/services.css">
+  <link rel="stylesheet" href="styles/gym-environment.css">
+  <link rel="stylesheet" href="styles/photos.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/photos2.css">
+  <link rel="stylesheet" href="styles/history.css">
+  <link rel="stylesheet" href="styles/plans.css">
+
+  <title>Imperium Fitness</title>
+</head>
+
+<body>
+
+  <header class="header container">
+
+    <img class="header__logo" src="assets/logo.png" alt="Logotipo">
+    <nav>
+      <ul class="header__nav">
+        <li><a class="header__nav-item" href="#presentation">Início</a></li>
+        <li><a class="header__nav-item" href="#features">Nós</a></li>
+        <li><a class="header__nav-item" href="#services">Serviços</a></li>
+        <li><a class="header__nav-item" href="#gym-environment">Ambiente</a></li>
+        <li><a class="header__nav-item" href="#gym-Planos">Planos</a></li>
+        <!--<li><a class="header__nav-item" href="historia.html">Nossa História</a></li>-->
+      </ul>
+    </nav>
+
+  </header>
+
+  <section class="presentation container" id="presentation">
+
+    <div class="presentation__description-container">
+      <h1 class="presentation__description-title">
+        Construa a saúde e o corpo que você merece.
+      </h1>
+      <p class="presentation__description-content text text--white">
+        Treine numa academia com uma equipe de profissionais de alto nível e aparelhos incríveis.
+      </p>
+      <a class="presentation__contact-button"
+        href="https://api.whatsapp.com/send/?phone=559392436416&text&type=phone_number&app_absent=0" onclick="button">
+        Entrar em contato
+      </a>
+    </div>
+    <img class="presentation__image" src="assets/imagem1.png" alt="Área de musculação.">
+
+  </section>
+
+  <section class="features container" id="features">
+
+    <h1 class="features__title title">
+      O que você vai ganhar <br class="lg-only">treinando conosco?
+    </h1>
+    <div class="features__container">
+
+      <div class="features__item">
+        <img class="features__item-image" src="assets/dollar-icon.svg" alt="ícone de dólar">
+        <h2 class="features__item-title">Planos que cabem no seu bolso</h2>
+        <p class="features__item-content text text--dark">O melhor custo beneficio da cidade!!
+        </p>
+      </div>
+
+      <div class="features__item">
+        <img class="features__item-image" src="assets/localization-icon.svg" alt="ícone de localização">
+        <h2 class="features__item-title">Fácil localização</h2>
+        <p class="features__item-content text text--dark">Tv. Cazuza Guerreiro, 559-Centro, Oriximiná - PA
+        </p>
+      </div>
+
+      <div class="features__item">
+        <img class="features__item-image" src="assets/medal-icon.svg" alt="ícone de medalha">
+        <h2 class="features__item-title">Alto nível</h2>
+        <p class="features__item-content text text--dark">Nossos equipamentos são modernos, estratégicos e simples. Tudo
+          para te levar ao seu resultado esperado.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-------------------------------------------------------------------------------------------------------------------------->
+  <section class="photos container">
+    <span class="tag">Evolução</span>
+    <h1 class="title">
+      ESSA É A IMPERIUM
+    </h1>
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <input type="radio" name="radio-btn" id="radio5">
+        <input type="radio" name="radio-btn" id="radio6">
+
+        <!--slide imgs-->
+        <div class="slide first">
+          <img src="imgHistoria\20196.jpg" alt="img1">
+        </div>
+        <div class="slide">
+          <img src="imgHistoria\20192.jpg" alt="img2">
+        </div>
+        <div class="slide">
+          <img src="imgHistoria\20221.jpg" alt="img3">
+        </div>
+        <div class="slide">
+          <img src="imgHistoria\20241.jpg" alt="img4">
+        </div>
+        <div class="slide">
+          <img src="imgHistoria\20251.jpg" alt="img5">
+        </div>
+        <div class="slide">
+          <img src="imgHistoria\20254.jpg" alt="img6">
+        </div>
+        <!--navegation auto-->
+        <div class="navegation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+          <div class="auto-btn5"></div>
+          <div class="auto-btn6"></div>
+        </div>
+
+      </div>
+      <div class="manual-navigation">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+        <label for="radio5" class="manual-btn"></label>
+        <label for="radio6" class="manual-btn"></label>
+      </div>
+    </div>
+    <h2 class="features__item-title2">
+      A Academia Imperium Fitness inaugurou em julho de 2019, tendo como principal objetivo oferecer bem estar fisico e
+      mental, desde o bom atendimento ao exercício físico.
+    </h2>
+  </section>
+
+  <script src="java\script.js"></script>
+
+
+  <!-------------------------------------------------------------------------------------------------------------------------->
+  <section class="gym-environment container">
+
+    <div class="gym-environment__description-container">
+      <span class="tag">
+        Sorte ou Planejamento?
+      </span>
+      <h1 class="gym-environment__title title">
+        Ricardo Soares de Souza
+      </h1>
+      <p class="gym-environment__content text text--dark">
+        Embora eu não tenha total domínio sobre o nosso ramo de atuação, posso contar com uma equipe formada por
+        profissionais qualificados, com os quais me permito aprender, diariamente.
+        A sorte significa lidar com algo incerto. A gestão da Academia Imperium Fitness tem como base, o planejamento e
+        escuta ativa de nossos colaboradores.
+        Conhecendo os próximos passos, sabemos o que podemos, e vamos alcançar!
+      </p>
+    </div>
+    <img class="gym-environment__image" src="assets/SrRicardo.jpg" width="700" height="500"
+      alt="Foto da academia Imperium Fitness">
+
+  </section>
+
+
+
+
+  <section class="services container" id="services">
+
+    <div class="plans__container">
+      <iframe width="100%" height="500"
+        src="https://www.youtube.com/embed/1It7SFG8o34?autoplay=1&mute=1&loop=1&playlist=1It7SFG8o34&rel=0"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="services__description-container">
+      <span class="tag">Instrutores / Café</span>
+      <h1 class="services__title title">
+        Tudo o que você quer no mesmo lugar
+      </h1>
+      <p class="services__content text text--dark">
+        Na Imperium Fitness você terá tudo o que precisa para conquistar resultados incríveis. Só depende de você!
+      </p>
+
+      <div class="services__item">
+        <img src="assets/check-icon.svg" alt="ícone de check">
+        <div class="services__info">
+          <h2 class="services__item-title">Treinadores profissionais</h2>
+          <p class="services__item-content text text--dark">Treine com os melhores profissionais da musculação com
+            exercícios de simples execução.</p>
+        </div>
+      </div>
+
+      <div class="services__item">
+        <img src="assets/check-icon.svg" alt="ícone de check">
+        <div class="services__info">
+          <h2 class="services__item-title">Hora do Café</h2>
+          <p class="services__item-content text text--dark">Venha saborear o famoso café da Imperium, preparado com todo
+            o amor e carinho que só quem ama o que faz pode oferecer. Aqui, cada xícara é um convite para que você se
+            sinta em casa!.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="gym-environment container" id="gym-environment">
+
+    <div class="gym-environment__description-container">
+      <span class="tag">
+        A academia Imperium Fitness
+      </span>
+      <h1 class="gym-environment__title title">
+        O ambiente que faz a diferença nos seus resultados.
+      </h1>
+      <p class="gym-environment__content text text--dark">
+        Nós sabemos que um ambiente incrível leva a resultados incríveis e por este motivo pensamos cuidadosamente em
+        cada detalhe da Imperium Fitness.
+      </p>
+    </div>
+    <img class="gym-environment__image" src="assets/imagem3.jpg" alt="Foto da academia Imperium Fitness">
+
+  </section>
+
+  <section class="services container" id="gym-environment">
+
+    <img class="services__image" src="imgHistoria\Atletas.png" alt="Atletas">
+    <div class="services__description-container">
+      <span class="tag">Esporte</span>
+      <h1 class="services__title title">
+        ATLETAS IMPERIUM.
+      </h1>
+      <p class="services__content text text--dark">
+        Reconhecemos o esforço de quem se dedica a vencer através do esporte, elevando não somente a bandeira da
+        Imperium, mas de nosso município. </p>
+    </div>
+
+  </section>
+
+  <!-------------------------------------------------------------------------------------------------------------------------->
+
+  <section class="plans container" id="gym-Planos">
+    <span class="tag">Planos</span>
+    <h1 class="plans__title title">Nossos Planos</h1>
+    <p class="plans__content text text--dark">
+      Maximize sua força e resistência com nossos planos de musculação!
+      Nossa academia oferece treinos personalizados e orientação especializada para ajudar você a atingir seus objetivos
+      de forma segura e eficaz. Junte-se a nós e comece sua transformação muscular hoje mesmo!
+    </p>
+
+    <!-- Cards de Planos -->
+    <div class="plans__container">
+      <!-- Plano 1 -->
+      <div class="plan">
+        <h2 class="plan__title">Plano Mensal</h2>
+        <p class="plan__price">Livre R$ 90,00<span>/mês</span></p>
+        <p class="plan__price">4x semana R$ 85,00<span>/mês</span></p>
+        <p class="plan__price">3x semanaR$ 80,00<span>/mês</span></p>
+        <p class="plan__price">Empresarial R$ 80,00<span>/mês</span></p>
+        <ul class="plan__benefits">
+          <li class="plan__benefit-alert">Taxa de inscrição: R$ 12,00</li> <!-- Alerta de taxa de inscrição -->
+          <li>Acesso ilimitado à academia.</li>
+          <li>Treinos personalizados.</li>
+          <li>Sem taxa de cancelamento.</li>
+        </ul>
+        <a href="https://api.whatsapp.com/send?phone=559392436416&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20Plano%20Mensal."
+          target="_blank" class="plan__button">Mais informações</a>
+      </div>
+
+      <!-- Plano 2 -->
+      <div class="plan plan--highlight">
+        <h2 class="plan__title">Plano Curtos </h2>
+        <p class="plan__price">Quinzena R$ 55,00<span>/15 dias</span></p>
+        <p class="plan__price">Semana R$ 45,00<span>/semana</span></p>
+        <p class="plan__price">Diária R$ 15,00<span>/dia</span></p>
+        <ul class="plan__benefits">
+          <li>Sem taxa de matrícula.</li>
+          <li>Treinos básicos.</li>
+          <li>Ideal para quem quer experimentar.</li>
+        </ul>
+
+        <a href="https://api.whatsapp.com/send?phone=559392436416&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20Plano%20Curto."
+          target="_blank" class="plan__button">Mais informações</a>
+      </div>
+
+      <!-- Plano 3 -->
+      <div class="plan">
+        <h2 class="plan__title">Plano Cardio</h2>
+        <p class="plan__price">R$ 70,00<span>/mês</span></p>
+        <ul class="plan__benefits">
+          <li class="plan__benefit-alert">Taxa de inscrição: R$ 12,00</li> <!-- Alerta de taxa de inscrição -->
+          <li>Acesso ilimitado a area de cárdio, localizada no 2º piso da academia.</li>
+          <li>Sem taxa de cancelamento.</li>
+        </ul>
+        <a href="https://api.whatsapp.com/send?phone=559392436416&text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20o%20Plano%20Cardio."
+          target="_blank" class="plan__button">Mais informações</a>
+      </div>
+      <!-- Horários de Funcionamento -->
+      <div class="opening-hours">
+        <h2 class="opening-hours__title title">Horários de Funcionamento</h2>
+        <ul class="opening-hours__list">
+          <li class="opening-hours__item">
+            <span class="opening-hours__day">Segunda a Sexta:</span>
+            <span class="opening-hours__time">6:00 às 21:00</span>
+          </li>
+          <li class="opening-hours__item">
+            <span class="opening-hours__day">Sábado:</span>
+            <span class="opening-hours__time">8:00 às 14:00</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Avaliação Física -->
+    <div class="plans__container plans__container--evaluation">
+      <h2 class="evaluation__title title">Avaliação Física</h2>
+      <p class="evaluation__description text text--dark">
+        Oferecemos avaliação física completa para acompanhar seu progresso e garantir que você atinja seus objetivos de
+        forma segura e eficiente.
+      </p>
+      <ul class="evaluation__benefits">
+        <li>Análise de composição corporal.</li>
+        <li>Medidas de força e resistência.</li>
+        <li>Plano de treino personalizado.</li>
+      </ul>
+      <a href="https://api.whatsapp.com/send?phone=559392436416&text=Olá,%20gostaria%20de%20agendar%20uma%20avaliação%20física."
+        target="_blank" class="evaluation__button plan__button">Agendar Avaliação</a>
+    </div>
+  </section>
+
+  <section class="feedback container" id="feedback">
+    <h1 class="feedback__title title">Deixe seu Feedback</h1>
+    <p class="feedback__description text text--dark">
+      Sua opinião é muito importante para nós! Ajude-nos a melhorar preenchendo este formulário.
+    </p>
+
+    <!-- Botão de alternância -->
+    <button class="feedback__toggle-button" onclick="toggleFeedbackForm()">
+      Mostrar Formulário
+    </button>
+
+    <!-- Incorporação do Google Forms -->
+    <iframe id="feedbackIframe"
+      src="https://docs.google.com/forms/d/e/1FAIpQLSexMY87O7YiRBLLgUmlyNDsDwzApdbneQqef2hvYflzCog6Jg/viewform?usp=header"
+      width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0" style="display: none;">
+      <!-- Inicialmente escondido -->
+      Carregando…
+    </iframe>
+  </section>
+
+  <footer class="footer">
+
+    <div class="footer__container container">
+
+      <div class="footer__brand-container">
+
+        <p class="footer__brand-text text text--white">
+        <h2 class="footer__contact-title"> Seu corpo é seu templo!</h2>
+        </p>
+
+        <ul class="brand__social-media">
+
+          <li class="brand__social-media-item">
+            <a href="https://www.facebook.com/academiaimperiumfit/?locale=pt_BR" target="_blank">
+              <img src="assets/facebook-brand-icon.svg" alt="ícone do Facebook">
+            </a>
+          </li>
+
+          <li class="brand__social-media-item">
+            <a href="https://www.instagram.com/imperiumfitness_academia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank">
+              <img src="assets/instagram-brand-icon.svg" alt="ícone do Instagram">
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer__contact-container">
+        <h2 class="footer__contact-title">Fale conosco</h2>
+        <address class="footer__address text text--white">
+          Tv. Cazuza Guerreiro, 559<br>
+          Centro, Oriximiná - PA <br>
+          CEP - 68270-000 <br>
+          (93) 9243-6416 <br>
+        </address>
+      </div>
+
+      <iframe class="footer__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6706.848954724694!2d-55.85844689147795!3d-1.76926069164826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x927d151bea0678ed%3A0x15ae84f11d7da!2sAcademia%20Imperium%20Fitness!5e0!3m2!1spt-BR!2sbr!4v1730133739730!5m2!1spt-BR!2sbr"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+    <!-- Adicionando "Todos os direitos reservados" -->
+    <div class="footer__copyright">
+      <p class="footer__copyright-text text text--white">
+        © 2023 Imperium Fitness. Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

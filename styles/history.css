@@ -1,0 +1,169 @@
+/* Container do slider */
+.slider {
+    margin: 0 auto;
+    width: 90%; /* Largura relativa */
+    max-width: 1200px; /* Aumentei a largura máxima para telas grandes */
+    height: auto; /* Altura automática */
+    overflow: hidden;
+    position: relative;
+}
+
+/* Container dos slides */
+.slides {
+    width: 600%; /* 4 slides = 400% */
+    height: auto; /* Altura automática */
+    display: flex;
+    transition: transform 2s ease; /* Transição suave */
+}
+
+/* Esconde os inputs */
+.slides input {
+    display: none;
+}
+
+/* Estilo de cada slide */
+.slide {
+    width: 25%; /* Cada slide ocupa 25% do container */
+    position: relative;
+}
+
+/* Imagens dentro dos slides */
+.slide img {
+    width: 100%; /* Largura relativa */
+    height: auto; /* Altura automática */
+    display: block;
+    border-radius: 15px;
+}
+
+/* Navegação manual */
+.manual-navigation {
+    position: absolute;
+    width: 100%;
+    bottom: 20px; /* Posiciona os botões na parte inferior */
+    display: flex;
+    justify-content: center;
+    z-index: 10; /* Garante que os botões fiquem acima das imagens */
+}
+
+/* Botões de navegação manual */
+.manual-btn {
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 20px; /* Espaçamento entre os botões */
+}
+
+.manual-btn:hover {
+    background-color: #fff;
+}
+
+/* Navegação automática */
+.navegation-auto {
+    position: absolute;
+    width: 100%;
+    bottom: 0; /* Posiciona os botões na parte inferior */
+    display: flex;
+    justify-content: center;
+    z-index: 10; /* Garante que os botões fiquem acima das imagens */
+}
+
+/* Botões de navegação automática */
+.navegation-auto div {
+    border: 2px solid #5e081d;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 1s ease;
+}
+
+.navegation-auto div:not(:last-child) {
+    margin-right: 20px; /* Espaçamento entre os botões */
+}
+
+/* Efeitos de transição ao mudar de slide */
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -75%;
+}
+#radio5:checked ~ .first {
+    margin-left: -100%;
+}
+#radio6:checked ~ .first {
+    margin-left: -125%;
+}
+
+/* Estilo dos botões de navegação automática quando ativos */
+#radio1:checked ~ .navegation-auto .auto-btn1 {
+    background-color: #5e081d;
+}
+
+#radio2:checked ~ .navegation-auto .auto-btn2 {
+    background-color: #5e081d;
+}
+
+#radio3:checked ~ .navegation-auto .auto-btn3 {
+    background-color: #5e081d;
+}
+
+#radio4:checked ~ .navegation-auto .auto-btn4 {
+    background-color: #5e081d;
+}
+#radio5:checked ~ .navegation-auto .auto-btn5 {
+    background-color: #5e081d;
+}
+#radio6:checked ~ .navegation-auto .auto-btn6 {
+    background-color: #5e081d;
+}
+
+/* Media Queries para ajustes em telas menores */
+@media (max-width: 768px) {
+    .slider {
+        width: 100%; /* Ocupa toda a largura da tela */
+    }
+
+    .manual-navigation, .navegation-auto {
+        bottom: 10px; /* Ajusta a posição dos botões */
+    }
+
+    .manual-btn, .navegation-auto div {
+        padding: 3px; /* Botões menores */
+        border-width: 1px;
+    }
+
+    .manual-btn:not(:last-child), .navegation-auto div:not(:last-child) {
+        margin-right: 10px; /* Espaçamento menor entre os botões */
+    }
+}
+
+/* Ajustes para telas grandes */
+@media (min-width: 1200px) {
+    .slider {
+        max-width: 1200px; /* Define um limite máximo para o slider */
+    }
+
+    .slide img {
+        max-height: 600px; /* Define uma altura máxima para as imagens */
+        object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+        border-radius: 15px;
+    }
+
+    .manual-navigation, .navegation-auto {
+        bottom: 30px; /* Aumenta a distância dos botões em telas grandes */
+    }
+}

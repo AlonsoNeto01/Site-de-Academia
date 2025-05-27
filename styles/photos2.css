@@ -1,0 +1,46 @@
+/* Estilo base para o contêiner de fotos */
+.photos2 {
+    margin-top: 4rem;
+    padding-left: 2rem;
+}
+.photos__photos-container--two-columns {
+    margin-top: 3rem;
+}
+
+/* Estilo para as imagens */
+.photos__image--two-columns {
+    max-width: 95%;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    display: block;
+}
+
+/* Efeito de hover nas imagens */
+.photos__image-container--two-columns img {
+    transition: transform 0.3s ease;
+}
+
+.photos__image-container--two-columns img:hover {
+    transform: scale(1.05);
+}
+
+/* Layout de duas colunas */
+@media (min-width: 500px) {
+    .photos__photos-container--two-columns {
+        column-count: 2; /* Duas colunas */
+        column-gap: 1.5rem; /* Espaçamento entre colunas */
+    }
+}
+
+/* Ajustes de margem para telas maiores */
+@media (min-width: 768px) {
+    .photos2 {
+        margin-top: 8rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .photos2 {
+        margin-top: 10rem;
+    }
+}

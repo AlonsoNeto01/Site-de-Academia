@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(94, 8, 29);
+    --white-text: #d0d0d0;
+    --dark-text: #6b6b6b;
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 1.6rem;
+}
+
+.container {
+    padding: 0 3rem;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.text {
+    font-size: 1.4rem;
+    line-height: 1.7;
+}
+
+.text--dark {
+    color: var(--dark-text)
+}
+
+.text--white {
+    color: var(--white-text);
+}
+
+.title {
+    font-weight: 700;
+    font-size: 2.4rem;
+    color: var(--primary-color);
+    line-height: 1.7;
+}
+
+.tag {
+    color: #aaaaaa;
+    margin-top: 3rem;
+    display: block;
+    text-transform: uppercase;
+}
+
+.lg-only {
+    display: none;
+}
+.footer__copyright {
+    text-align: center; /* Centraliza o texto */
+    padding: 1rem 0; /* Adiciona um espaçamento interno */
+    background-color: #333; /* Cor de fundo */
+}
+
+.footer__copyright-text {
+    font-size: 1rem; /* Tamanho da fonte */
+    color: #fff; /* Cor do texto */
+    margin: 0; /* Remove margens padrão */
+}
+
+.feedback {
+    padding: 4rem 1rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.feedback__title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.feedback__description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.feedback__toggle-button {
+    background-color: #5e081d; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    padding: 0.8rem 2rem; /* Espaçamento interno */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.feedback__toggle-button:hover {
+    background-color: #7a0a2a; /* Cor de fundo ao passar o mouse */
+}
+
+.feedback iframe {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 600px;
+    margin-top: 1rem; /* Espaçamento acima do iframe */
+}
+
+/* Ajustes para telas menores que 768px */
+@media (max-width: 768px) {
+    .feedback {
+        padding: 2rem 1rem;
+    }
+
+    .feedback__title {
+        font-size: 2rem;
+    }
+
+    .feedback__description {
+        font-size: 1rem; /* Tamanho menor para telas pequenas */
+        margin-bottom: 1.5rem; /* Espaçamento reduzido */
+        padding: 0 1rem; /* Adiciona padding nas laterais */
+    }
+
+    .feedback iframe {
+        height: 400px;
+    }
+}
+
+/* Ajustes para telas menores que 480px */
+@media (max-width: 480px) {
+    .feedback {
+        padding: 1.5rem 1rem;
+    }
+
+    .feedback__title {
+        font-size: 1.5rem;
+    }
+
+    .feedback__description {
+        font-size: 0.9rem;
+    }
+
+    .feedback iframe {
+        height: 300px;
+    }
+}
+
+@media (min-width: 900px) {
+    .tag {
+        margin-top: 0;
+    }
+
+    .title {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 1040px) {
+    .lg-only {
+        display: initial;
+    }
+}

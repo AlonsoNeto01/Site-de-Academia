@@ -1,0 +1,343 @@
+/* Estilos gerais da seção de planos */
+.plans {
+    padding: 4rem 1rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.plans__title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.plans__content {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Container dos planos */
+.plans__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Estilo de cada plano */
+.plan {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.plan__title {
+    font-size: 1.8rem;
+    color: #5e081d;
+    margin-bottom: 1rem;
+}
+
+.plan__price {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.plan__price span {
+    font-size: 1rem;
+    color: #666;
+}
+
+.plan__benefits {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.plan__benefits li {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.plan__benefits li::before {
+    content: "✔";
+    color: #5e081d;
+    position: absolute;
+    left: 0;
+}
+
+.plan__button {
+    display: inline-block;
+    background-color: #5e081d;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.plan__button:hover {
+    background-color: #7a0a2a;
+}
+.plan__benefit-alert {
+    font-weight: bold; /* Texto em negrito */
+    color: #d9534f; /* Cor vermelha para destacar */
+}
+
+.plan__benefit-alert::before {
+    content: "⚠️"; /* Ícone de alerta */
+    color: #d9534f; /* Cor vermelha para o ícone */
+    margin-right: 0.5rem; /* Espaçamento entre o ícone e o texto */
+}
+
+/* Plano em destaque */
+.plan--highlight {
+    background-color: #5e081d;
+    color: #fff;
+}
+
+.plan--highlight .plan__title,
+.plan--highlight .plan__price,
+.plan--highlight .plan__benefits li {
+    color: #fff;
+}
+
+.plan--highlight .plan__benefits li::before {
+    color: #fff;
+}
+
+.plan--highlight .plan__button {
+    background-color: #fff;
+    color: #5e081d;
+}
+
+.plan--highlight .plan__button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Informações Adicionais */
+.plans__item {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 3rem;
+}
+
+.plans__info {
+    margin-left: 1.5rem;
+    border-radius: 8px;
+}
+
+.plans__item-title {
+    font-weight: 700;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+.plans__item-content {
+    margin-top: 1.5rem;
+}
+.plans__content {
+    font-size: 1.2rem; /* Tamanho padrão para telas maiores */
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.6; /* Melhora a legibilidade */
+}
+
+/* Ajustes para telas menores que 768px */
+@media (max-width: 768px) {
+    .plans__content {
+        font-size: 1rem; /* Tamanho menor para telas pequenas */
+        margin-bottom: 1.5rem; /* Espaçamento reduzido */
+        padding: 0 1rem; /* Adiciona padding nas laterais */
+    }
+}
+
+/* Ajustes para telas menores que 480px (celulares pequenos) */
+@media (max-width: 480px) {
+    .plans__content {
+        font-size: 0.9rem; /* Tamanho ainda menor para telas muito pequenas */
+        margin-bottom: 1rem; /* Espaçamento reduzido */
+    }
+}
+/* Responsividade */
+@media (max-width: 768px) {
+    .plans__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        max-width:80%;
+    }
+}
+
+@media (min-width: 900px) {
+    .plans {
+        margin-top: 10rem;
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto; /* Removendo altura fixa */
+    }
+
+    .plans__image {
+        width: 42%;
+        align-self: flex-start;
+    }
+
+    .plans__description-container {
+        width: 50%;
+    }
+}
+.opening-hours {
+    margin-top: 3rem; /* Espaçamento acima da seção */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.opening-hours__title {
+    font-size: 2rem; /* Tamanho do título */
+    color: #5e081d; /* Cor do título */
+    margin-bottom: 1.5rem; /* Espaçamento abaixo do título */
+}
+
+.opening-hours__list {
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o padding padrão */
+}
+
+.opening-hours__item {
+    font-size: 1.2rem; /* Tamanho da fonte */
+    color: #666; /* Cor do texto */
+    margin-bottom: 0.5rem; /* Espaçamento entre os itens */
+}
+
+.opening-hours__day {
+    font-weight: bold; /* Destaca o dia */
+}
+
+.opening-hours__time {
+    margin-left: 0.5rem; /* Espaçamento entre o dia e o horário */
+}
+
+/* Ajustes para telas menores que 768px */
+@media (max-width: 768px) {
+    .opening-hours__title {
+        font-size: 1.75rem; /* Título menor */
+    }
+
+    .opening-hours__item {
+        font-size: 1rem; /* Texto menor */
+    }
+}
+
+/* Ajustes para telas menores que 480px */
+@media (max-width: 480px) {
+    .opening-hours__title {
+        font-size: 1.5rem; /* Título menor */
+    }
+
+    .opening-hours__item {
+        font-size: 0.9rem; /* Texto menor */
+    }
+}
+:root {
+    --primary-color: #5e081d;
+    --hover-color: #7a0a2a;
+    --text-color: #333;
+    --secondary-text-color: #666;
+    --background-color: #fff;
+}
+
+.plans__container--evaluation {
+    margin: 2rem auto; /* Centraliza o container */
+    max-width: 800px; /* Define uma largura máxima */
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.evaluation__title {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.evaluation__description {
+    font-size: 1.2rem;
+    color: var(--secondary-text-color);
+    margin-bottom: 1.5rem;
+}
+
+.evaluation__benefits {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.evaluation__benefits li {
+    font-size: 1rem;
+    color: var(--secondary-text-color);
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.evaluation__benefits li::before {
+    content: "✔";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+.evaluation__button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.evaluation__button:hover {
+    background-color: var(--hover-color);
+    transform: scale(1.05);
+}
+
+/* Ajustes para telas menores que 768px */
+@media (max-width: 768px) {
+    .evaluation__title {
+        font-size: 1.75rem;
+    }
+
+    .evaluation__description {
+        font-size: 1rem;
+    }
+
+    .evaluation__benefits li {
+        font-size: 0.9rem;
+    }
+
+    .plans__container--evaluation {
+        padding: 1.5rem;
+    }
+}
