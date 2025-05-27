@@ -14,18 +14,19 @@ Este é um site institucional desenvolvido para a **Academia Imperium**, com foc
 ## 📁 Estrutura do Projeto
 
 imperium/
-├── assets/ # Imagens e ícones utilizados no site
-├── styles/ # Estilos CSS separados por seções
-│ ├── reset.css
-│ ├── global.css
-│ ├── header.css
-│ ├── presentation.css
-│ ├── features.css
-│ ├── services.css
-│ ├── gym-environment.css
-│ ├── photos.css
-│ └── footer.css
-├── index.html # Página principal do site
+├── assets/                 # Imagens e ícones utilizados no site
+├── styles/                 # Estilos CSS separados por seções
+│   ├── reset.css
+│   ├── global.css
+│   ├── header.css
+│   ├── presentation.css
+│   ├── features.css
+│   ├── services.css
+│   ├── gym-environment.css
+│   ├── photos.css
+│   └── footer.css
+├── index.html              # Página principal do site
+
 
 ## 💻 Tecnologias Utilizadas
 
